@@ -1,0 +1,44 @@
+/*---------------Contacts---------------*/
+
+.contact-list {
+  // display: flex;
+  margin-left: auto;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding: 0%;
+  list-style: none;
+  display: none;
+}
+
+.contact-list__item {
+  // display: inline-block;
+}
+
+.contact-list__link {
+  // display: flex;
+  // align-items: center;
+
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+
+.contact-list__icon {
+  margin-right: 10px;
+}
+
+.contact-list__link--retreat:last-child {
+  margin-left: 50px;
+}
