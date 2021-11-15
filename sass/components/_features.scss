@@ -6,16 +6,21 @@
 }
 
 .features__list {
-  // display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px;
 
   list-style: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
-.features__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .features__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features__icon {
@@ -40,6 +45,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 480px) {
+    text-align: center;
+  }
 }
 
 .features__text {
@@ -49,4 +58,8 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 760px) {
+    margin-bottom: 30px;
+  }
 }
