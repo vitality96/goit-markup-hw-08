@@ -21,11 +21,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*---------------Visually-Hidden Elements---------------*/
@@ -42,6 +41,31 @@ body {
   margin: -1px;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 /*---------------Page Header---------------*/
 .page-header {
   border-bottom: 1px solid #ececec;
@@ -54,7 +78,6 @@ body {
 }
 
 .nav__btn {
-  display: inline-flex;
   margin: 0%;
   padding: 0%;
   border: none;
@@ -96,10 +119,6 @@ body {
 
 .nav__link--decoration:hover, .nav__link--decoration:focus {
   color: var(--accent-color);
-}
-
-.nav__item--retreat:first-child {
-  margin-left: 93px;
 }
 
 .nav__item--retreat:not(:last-child) {
@@ -178,10 +197,6 @@ body {
 
 .contact-list__icon {
   margin-right: 10px;
-}
-
-.contact-list__link--retreat:last-child {
-  margin-left: 50px;
 }
 
 /*---------------Hero---------------*/
