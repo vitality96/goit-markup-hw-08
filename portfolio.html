@@ -19,6 +19,12 @@
         <div class="container container--page-header">
         <nav class="nav">
             <a href="./index.html" class="logo">Web<span class="logo logo--start">Studio</span></a>
+            <button type="button" class="nav__btn is-open" data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="nav__icon-close" href="./images/sprite.svg#mobile-menu"></use>
+                    <use class="nav__icon-menu" href="./images/sprite.svg#mobile-close"></use>
+                </svg>
+            </button>
             <ul class="nav__list">
                 <li class="nav__item nav__item--retreat"><a href="./index.html" class="nav__link nav__link--decoration">Студия</a></li>
                 <li class="nav__item nav__item--retreat"><a href="" class="nav__link nav__link--active nav__link--decoration">Портфолио</a></li>
@@ -214,48 +220,50 @@
 
     <!--Футер-->
     <footer class="page-footer">
-        <div class="container container--page-footer">
-            <div>
-                <a href="./index.html" class="logo logo--retreat">Web<span class="logo--end">Studio</span></a>
-                <address class="adress">
-                    г. Киев, пр-т Леси Украинки, 26
-                </address>
-        
-                <address>
-                    <a href="mailto:info@example.com" class="page-footer__contact">info@example.com</a> <br>
-                    <a href="tel:+380991111111" class="page-footer__contact">+38 099 111 11 11</a>
-                </address>
-            </div>
-            <div class="contacts">
-                <h3 class="contacts__title">присоединяйтесь</h3>
-                <ul class="contacts__list">
-                    <li class="contacts__item">
-                        <a href="" class="contacts__link">
-                            <svg width="20" height="20">
-                                <use href="./images/sprite.svg#instagram-footer"></use>
-                            </svg></a>
-                    </li>
-                    <li class="contacts__item">
-                        <a href="" class="contacts__link">
-                            <svg width="20" height="20">
-                                <use href="./images/sprite.svg#twitter-footer"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a href="" class="contacts__link">
-                            <svg width="20" height="20">
-                                <use href="./images/sprite.svg#facebook-footer"></use>
-                            </svg></a>
-                    </li>
-                    <li class="contacts__item">
-                        <a href="" class="contacts__link">
-                            <svg width="20" height="20">
-                                <use href="./images/sprite.svg#linkedin-footer"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+        <div class="container container-page--footer">
+            <div class="page-footer__links">
+                <div class="page-footer__address">
+                    <a href="./index.html" class="logo logo--retreat">Web<span class="logo--end">Studio</span></a>
+                    <address class="address">
+                        г. Киев, пр-т Леси Украинки, 26
+                    </address>
+    
+                    <address class="address__primary">
+                        <a href="mailto:info@example.com" class="page-footer__contact">info@example.com</a> <br>
+                        <a href="tel:+380991111111" class="page-footer__contact">+38 099 111 11 11</a>
+                    </address>
+                </div>
+                <div class="contacts">
+                    <h3 class="contacts__title">присоединяйтесь</h3>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <a href="" class="contacts__link">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#instagram-footer"></use>
+                                </svg></a>
+                        </li>
+                        <li class="contacts__item">
+                            <a href="" class="contacts__link">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#twitter-footer"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a href="" class="contacts__link">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#facebook-footer"></use>
+                                </svg></a>
+                        </li>
+                        <li class="contacts__item">
+                            <a href="" class="contacts__link">
+                                <svg width="20" height="20">
+                                    <use href="./images/sprite.svg#linkedin-footer"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <form class="form-footer">
                 <b class="form-footer__slogan">Подпишитесь на рассылку</b>
