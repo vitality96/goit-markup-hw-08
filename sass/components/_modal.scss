@@ -53,12 +53,10 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     max-width: 450px;
-    height: 581px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
-    height: 581px;
   }
 }
 
@@ -154,11 +152,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+
+  @media screen and (max-width: 479px) {
+    font-size: 7px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 10px;
+    letter-spacing: 0.02em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    letter-spacing: 0.03em;
+  }
 }
 
 .form-checkbox__input {
@@ -173,6 +183,11 @@
   height: 15px;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
+
+  @media screen and (max-width: 479px) {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .form-checkbox__input:checked + .form-checkbox__icon {
@@ -216,9 +231,6 @@
 }
 
 .form-btn__close {
-  position: absolute;
-  top: 8px;
-  left: 490px;
   padding: 0%;
   border: 0;
   line-height: 0;
@@ -232,5 +244,23 @@
 
   &:hover {
     fill: var(--accent-color);
+  }
+
+  @media screen and (max-width: 479px) {
+    position: absolute;
+    top: 25px;
+    left: 305px;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 35px;
+    left: 348px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 8px;
+    left: 410px;
   }
 }

@@ -170,19 +170,37 @@
             <ul class="work__list">
                 <li class="work__item">
                     <div class="work__decoration">
-                        <img src="./images/work/box1.jpg" alt="Программная инженерия" width="370"/>
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/work/occ-1-desktop.webp 1x, ./images/work/occ-1-desktop@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/work/occ-1-desktop.jpg 1x, ./images/work/occ-1-desktop@2x.jpg 2x">
+                            <img src="#" alt="Программная инженерия" />
+                        </picture>
                             <p class="work__text work__text--decoration">Десктопные приложения</p>
                     </div>
                 </li>
                 <li class="work__item">
                     <div class="work__decoration">
-                    <img src="./images/work/box2.jpg" alt="Разработка мобильных приложений" width="370"/>
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/work/occ-2-desktop.webp 1x, ./images/work/occ-2-desktop@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/work/occ-2-desktop.jpg 1x, ./images/work/occ-2-desktop@2x.jpg 2x">
+                            <img src="#" alt="Разработка мобильных приложений" />
+                        </picture>
                         <p class="work__text work__text--decoration">Мобильные приложения</p>
                     </div>
                 </li>
                 <li class="work__item">
                     <div class="work__decoration">
-                    <img src="./images/work/box3.jpg" alt="Графический веб-дизайн" width="370"/>
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/work/occ-3-desktop.webp 1x, ./images/work/occ-3-desktop@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/work/occ-3-desktop.jpg 1x, ./images/work/occ-3-desktop@2x.jpg 2x">
+                            <img src="#" alt="Графический веб-дизайн" />
+                        </picture>
                         <p class="work__text work__text--decoration">Дизайнерские решения</p>
                     </div>
                 </li>
@@ -196,11 +214,21 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
                <li class="team__item">
-                    <img 
-                    src="./images/team/img.jpg" 
-                    alt="Фотография дизайнера" 
-                    width="270" 
-                    class="team__card"/>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="./images/team/team-1.webp 1x, ./images/team/team-1@2x.webp 2x"
+                            type="image/webp">
+                        <source media="(max-width: 767px)" srcset="./images/team/team-1.jpg 1x, ./images/team/team-1@2x.jpg 2x">
+                        <source media="(max-width: 1199px)"
+                            srcset="./images/team/team-1-tablet.webp 1x, ./images/team/team-1-tablet@2x.webp 2x" type="image/webp">
+                        <source media="(max-width: 1199px)"
+                            srcset="./images/team/team-1-tablet.jpg 1x, ./images/team/team-1-tablet@2x.jpg 2x">
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/team/team-1-desktop.webp 1x, ./images/team/team-1-desktop@2x.webp 2x"
+                            type="image/webp">
+                        <source media="(min-width: 1200px)"
+                            srcset="./images/team/team-1-desktop.jpg 1x, ./images/team/team-1-desktop@2x.jpg 2x">
+                        <img class="team__card" src="#" alt="Фотография дизайнера" />
+                    </picture>
                     <div class="team__thumb">
                     <h3 class="team__text">Игорь Демьяненко</h3>
                     <p class="team__subtitle">Designer</p>
@@ -233,11 +261,20 @@
                     </div>
                </li>
                <li class="team__item">
-                   <img 
-                   src="./images/team/img1.jpg" 
-                   alt="Фотография фронтенд-разработчика"
-                   width="270"
-                   class="team__card"/>
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./images/team/team-2.webp 1x, ./images/team/team-2@2x.webp 2x"
+                        type="image/webp">
+                    <source media="(max-width: 767px)" srcset="./images/team/team-2.jpg 1x, ./images/team/team-2@2x.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                        srcset="./images/team/team-2-tablet.webp 1x, ./images/team/team-2-tablet@2x.webp 2x" type="image/webp">
+                    <source media="(max-width: 1199px)"
+                        srcset="./images/team/team-2-tablet.jpg 1x, ./images/team/team-2-tablet@2x.jpg 2x">
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/team/team-2-desktop.webp 1x, ./images/team/team-2-desktop@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/team/team-2-desktop.jpg 1x, ./images/team/team-2-desktop@2x.jpg 2x">
+                    <img class="team__card" src="#" alt="Фотография фронтенд-разработчика" />
+                </picture>
                    <div class="team__thumb">
                    <h3 class="team__text">Ольга Репина</h3>
                    <p class="team__subtitle">Frontend Developer</p>
@@ -270,11 +307,20 @@
                 </div>
                </li>
                <li class="team__item">
-                   <img 
-                   src="./images/team/img2.jpg" 
-                   alt="Фотография маркетолога"
-                   width="270"
-                   class="team__card"/>
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./images/team/team-3.webp 1x, ./images/team/team-3@2x.webp 2x"
+                        type="image/webp">
+                    <source media="(max-width: 767px)" srcset="./images/team/team-3.jpg 1x, ./images/team/team-3@2x.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                        srcset="./images/team/team-3-tablet.webp 1x, ./images/team/team-3-tablet@2x.webp 2x" type="image/webp">
+                    <source media="(max-width: 1199px)"
+                        srcset="./images/team/team-3-tablet.jpg 1x, ./images/team/team-3-tablet@2x.jpg 2x">
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/team/team-3-desktop.webp 1x, ./images/team/team-3-desktop@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/team/team-3-desktop.jpg 1x, ./images/team/team-3-desktop@2x.jpg 2x">
+                    <img class="team__card" src="#" alt="Фотография маркетолога" />
+                </picture>
                    <div class="team__thumb">
                    <h3 class="team__text">Николай Тарасов</h3>
                    <p class="team__subtitle">Marketing</p>
@@ -307,11 +353,20 @@
                 </div>
                </li>
                <li class="team__item">
-                   <img 
-                   src="./images/team/img3.jpg" 
-                   alt="Фотография дизайнера"
-                   width="270"
-                   class="team__card"/>
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./images/team/team-4.webp 1x, ./images/team/team-4@2x.webp 2x"
+                        type="image/webp">
+                    <source media="(max-width: 767px)" srcset="./images/team/team-4.jpg 1x, ./images/team/team-4@2x.jpg 2x">
+                    <source media="(max-width: 1199px)"
+                        srcset="./images/team/team-4-tablet.webp 1x, ./images/team/team-4-tablet@2x.webp 2x" type="image/webp">
+                    <source media="(max-width: 1199px)"
+                        srcset="./images/team/team-4-tablet.jpg 1x, ./images/team/team-4-tablet@2x.jpg 2x">
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/team/team-4-desktop.webp 1x, ./images/team/team-4-desktop@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/team/team-4-desktop.jpg 1x, ./images/team/team-4-desktop@2x.jpg 2x">
+                    <img class="team__card" src="#" alt="Фотография дизайнера" />
+                </picture>
                    <div class="team__thumb">
                    <h3 class="team__text">Михаил Ермаков</h3>
                    <p class="team__subtitle">UI Designer</p>

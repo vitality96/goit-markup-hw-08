@@ -176,14 +176,22 @@
   }
 }
 
-.btn-open__icon:hover,
-.btn-open__icon:focus {
-  fill: var(--accent-color);
+.btn-open__icon {
+  transition: fill 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
-.btn-close__icon:hover,
-.btn-close__icon:focus {
-  fill: var(--accent-color);
+.btn-close__icon {
+  transition: fill 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .mobile-nav__list {
