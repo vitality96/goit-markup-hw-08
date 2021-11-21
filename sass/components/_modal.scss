@@ -13,6 +13,13 @@
   opacity: 1;
 
   transition: opacity 250ms var(--timing-function);
+
+  & {
+    @media screen and (max-width: 479px) {
+      padding: 20px;
+      overflow-y: scroll;
+    }
+  }
 }
 
 .backdrop--is-hidden {
@@ -26,22 +33,33 @@
 }
 
 .backdrop__modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-
-  width: 528px;
-  height: 581px;
 
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition: transform 250ms var(--timing-function),
-    opacity 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function);
+
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    max-width: 450px;
+    height: 581px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .form-modal {
@@ -148,7 +166,7 @@
 }
 
 .form-checkbox__icon {
-  content: "";
+  content: '';
   display: inline-block;
   margin-right: 7px;
   width: 16px;
@@ -203,6 +221,7 @@
   left: 490px;
   padding: 0%;
   border: 0;
+  line-height: 0;
 
   cursor: pointer;
 
