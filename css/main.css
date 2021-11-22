@@ -96,6 +96,13 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .nav {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .nav {
     display: flex;
@@ -221,8 +228,8 @@ img {
 
 .btn-close {
   position: absolute;
-  top: 0%;
-  left: 86%;
+  top: 2%;
+  left: 83%;
   margin: 0%;
   padding: 0%;
   border: none;
@@ -309,6 +316,7 @@ img {
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+  font-weight: 500;
   color: var(--primary-text-color);
   text-decoration: none;
 }
@@ -498,6 +506,13 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero--centered {
+    width: 360px;
+    margin: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero--centered {
     display: flex;
@@ -629,7 +644,7 @@ img {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .features__title {
     text-align: center;
   }
@@ -726,6 +741,14 @@ img {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .team__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 
 .team__list {
@@ -857,6 +880,8 @@ img {
 @media screen and (max-width: 1199px) {
   .clients__title {
     margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
   }
 }
 
@@ -898,12 +923,6 @@ img {
   .clients__item {
     width: calc((100% - 6 * 15px) / 3);
     margin: 15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients__item:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
@@ -1016,7 +1035,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .page-footer__contact:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1225,13 +1244,6 @@ img {
   transition: opacity 250ms var(--timing-function);
 }
 
-@media screen and (max-width: 479px) {
-  .backdrop {
-    padding: 20px;
-    overflow-y: scroll;
-  }
-}
-
 .backdrop--is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1243,6 +1255,11 @@ img {
 }
 
 .backdrop__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
   opacity: 1;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1250,20 +1267,17 @@ img {
   transition: transform 250ms var(--timing-function), opacity 250ms var(--timing-function);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .backdrop__modal {
-    max-width: 450px;
-    width: 100%;
+    padding: 20px;
+    width: 350px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .backdrop__modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    max-width: 450px;
+    width: 450px;
+    padding: 35px;
   }
 }
 
@@ -1274,7 +1288,8 @@ img {
 }
 
 .form-modal {
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-modal__text {
@@ -1366,18 +1381,12 @@ img {
 
 @media screen and (max-width: 479px) {
   .form-checkbox__label {
-    font-size: 7px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .form-checkbox__label {
-    font-size: 10px;
+    font-size: 9px;
     letter-spacing: 0.02em;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .form-checkbox__label {
     font-size: 12px;
     letter-spacing: 0.03em;
@@ -1442,9 +1451,18 @@ img {
 }
 
 .form-btn__close {
+  position: absolute;
+  top: 7px;
+  left: 412px;
   padding: 0%;
-  border: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   line-height: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   background-color: var(--primary-white-color);
   fill: #000000;
@@ -1458,16 +1476,8 @@ img {
 @media screen and (max-width: 479px) {
   .form-btn__close {
     position: absolute;
-    top: 25px;
-    left: 305px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .form-btn__close {
-    position: absolute;
-    top: 35px;
-    left: 348px;
+    top: 3px;
+    left: 315px;
   }
 }
 
@@ -1475,7 +1485,7 @@ img {
   .form-btn__close {
     position: absolute;
     top: 8px;
-    left: 410px;
+    left: 490px;
   }
 }
 
